@@ -66,15 +66,15 @@ struct HorologeWidgetEntryView : View {
                         .font(.title)
                 }
                 VStack {
-                    Text("London")
+                    Text("UTC")
                         .font(.headline)
-                    Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Europe/London")))")
+                    Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "UTC")))")
                         .font(.title)
                 }
                 VStack {
-                    Text("Amsterdam")
+                    Text("Dubai")
                         .font(.headline)
-                    Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Europe/Amsterdam")))")
+                    Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Asia/Dubai")))")
                         .font(.title)
                 }
             }
